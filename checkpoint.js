@@ -19,7 +19,7 @@ const {
 
 // EJERCICIO 1
 // Implementar la funcion 'exponencial' que recibe un parametro entero 'exp'
-// y retorna una una funcion, nos referiremos a esta ultima como funcion hija,
+// y retorna una funcion, nos referiremos a esta ultima como funcion hija,
 // y a 'exponencial' como la funcion padre, la funcion hija debe de recibir 
 // un parametro y retornar dicho parametro elevado al parametro 'exp' de 
 // la funcion padre original 'exponencial'
@@ -33,7 +33,12 @@ const {
 // < 16
 
 function exponencial(exp) {
-
+    let current = 0;
+    return function (exp){
+        current = exp
+        var result = current * exp
+        return result 
+    }
 }
 
 // ----- Recursión -----
